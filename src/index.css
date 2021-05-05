@@ -133,7 +133,8 @@ button:hover, input[type=submit]:hover{
 }
 .about h1{
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
+  margin: 20px 0;
   font-weight: 400;
   font-size: 48px;
 }
@@ -141,9 +142,14 @@ button:hover, input[type=submit]:hover{
   color: #fff;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+.about1{
+  height: max-content;
 }
 .about p{
   font-size: 24px;
+  margin: 10px 0;
 }
 .creators{
   display: flex;
@@ -153,6 +159,7 @@ button:hover, input[type=submit]:hover{
   padding: 15px 0;
   font-weight: 400;
   font-size: 36px;
+  margin: 10px 0;
 }
 .creator-profile{
   display: flex;

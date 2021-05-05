@@ -2,6 +2,7 @@ import person from './img/person.svg'
 
 const About = () => {
     return (
+        <div className="about1">
         <div className="container">
         <div className="about">
             <h1>Loyiha haqida</h1>
@@ -26,10 +27,10 @@ const About = () => {
             <h3>Ibragimov Muhammad Siddiq</h3>
             <h3>15 yosh Frontend Dasturchi</h3>
             </div>
-            </div>
+            </div>       
         </div>
+        </div>        
         </div>
-        <div className="clear"></div>
         </div>
         </div>
     )
