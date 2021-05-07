@@ -5,6 +5,7 @@ import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import Loading from "./components/Loading/Loading";
 import Navbar from "./components/Navbar/Navbar";
+import PrayState from './context/prayers/PrayState'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
     {loading === false ? 
+    <PrayState>
     <Router>
     <Navbar/> 
     <Switch>
@@ -30,6 +32,7 @@ function App() {
     </Route>
     </Switch>
     </Router>
+    </PrayState>
     : 
     <Loading/>}
     </>

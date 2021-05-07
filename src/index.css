@@ -41,7 +41,7 @@ nav ul li{
 nav ul li:last-child{
   padding: 10px 0px 10px 10px;
 }
-input{
+input, textarea{
   display: block;
   width: 100%;
   background-color: transparent;
@@ -50,6 +50,9 @@ input{
   color: #939AA4;
   border-bottom: 2px solid #fff;
   font-size: 36px;
+}
+textarea{
+  height: 10%;
 }
 input::placeholder{
   font-size: 36px;
@@ -129,11 +132,10 @@ button:hover, input[type=submit]:hover{
 }
 .clear{
   clear: both;
-  height: 20vh;
+  height: 10vh;
 }
 .about h1{
   text-align: center;
-  padding: 20px 0;
   margin: 20px 0;
   font-weight: 400;
   font-size: 48px;
@@ -142,10 +144,9 @@ button:hover, input[type=submit]:hover{
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .about1{
-  height: max-content;
+  height: 93.4vh;
 }
 .about p{
   font-size: 24px;
@@ -180,9 +181,44 @@ button:hover, input[type=submit]:hover{
   justify-content: center;
   padding: 0 15px;
 }
+.contact{
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  height: 83.9vh;
+}
+.contact input, .contact textarea{
+  margin: 15px 0;
+}
+.contact button{
+  width: 25%;
+}
 img{
   width: 100%;
 }
+.mobi{
+  display: flex;
+  justify-content: space-between;
+}
+.hadis h2{
+  border-bottom: 2px solid #fff;
+}
+.alert{
+  border-radius: 10px;
+  background-color: #cacaca;
+  opacity: 0.6;
+  color: #333;
+  padding: 20px;
+  margin: 10px 0;
+}
+.alert h4{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: larger;
+}
+
 ::-webkit-scrollbar{
   width: 5px;
 }
@@ -191,4 +227,92 @@ img{
 }
 ::-webkit-scrollbar-thumb{
   background-color: #CF9809;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container{
+    max-width: 90%;
+  }
+  nav, ul{
+    flex-direction: column;
+  }
+  nav ul li{
+    padding: 10px 0;
+  }
+  nav ul li h3{
+    font-size: 1.5rem;
+  }
+  nav ul li:last-child{
+    padding: 10px 0;
+  }
+  .showcase,.prayers, .hadis,.showcase-content button, input[type=submit], .creator-img,.contact button{
+    width: 100%;
+  }
+  .showcase-content h1{
+    font-size: 36px;
+  }
+  .mobi{
+    flex-direction: column;
+  }
+  .hadis{
+    padding: 0;
+  }
+  .hadis p{
+    font-size: 25px;
+  }
+  .creator-profile, .creator{
+    flex-direction: column;
+  }
+  .creator-profile{
+    align-items: center;
+  }
+  .about1{
+    height: max-content;
+  }
+  .creator-text{
+    padding: 15px;
+  }
+  input, input::placeholder, textarea, textarea::placeholder{
+    font-size: 2rem;
+    color: #d1d1d1;
+  }
+  .showcase h2{
+    font-size: 2rem;
+  }
+  .prayers{
+    padding: 15px 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .mobi{
+    flex-direction: column;
+  }
+  .container{
+    max-width: 90%;
+  }
+  .prayers, .hadis{
+    width: 100%;
+  }
+  .hadis{
+    padding: 0;
+  }
+  .showcase-content button, input[type=submit]{
+    width: 50%;
+  }
+  .contact{
+    height: 100vh;
+  }
+  textarea{
+    height: max-content;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .clear {
+    clear: both;
+    height: 31vh;
+  }
+  .showcase-content button, input[type=submit]{
+    width: 30%;
+  }
 }

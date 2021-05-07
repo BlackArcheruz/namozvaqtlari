@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Hadis from '../Hadis/Hadis'
+import PrayContext from '../../../context/prayers/prayerContext';
 
 const Prayers = (props) => {
-    const style = {display: 'flex', justifyContent: 'space-between'}
-    const prayers = props.prayers
+    const prayContext = useContext(PrayContext);
+    const {prayers} = prayContext;
     const city = props.city
     return (
-        <div style={style}>
+        <div className="mobi" data-aos="fade-up-right">
                 <div className="prayers">
                     <h2>{city === '' ? 'Shahar nomini kiriting va Qidirishni bosing !' : city + 'da Namoz Vaqtlari:'}</h2>
                     {city === '' ? null :<div className="prayer">

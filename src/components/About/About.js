@@ -1,8 +1,14 @@
 import person from './img/person.svg'
+import {useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
+    useEffect(()=>{
+        AOS.init({duration: 1000});
+    },[])
     return (
-        <div className="about1">
+        <div className="about1" data-aos="zoom-in-up">
         <div className="container">
         <div className="about">
             <h1>Loyiha haqida</h1>
