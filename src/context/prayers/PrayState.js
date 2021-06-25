@@ -11,7 +11,7 @@ const PrayState = props =>{
 const [state, dispatch] = useReducer(prayReducer,initialState);
 
 const searchPrayTime = async(city)=>{
-    const res = await axios.get(`http://api.aladhan.com/v1/timingsByCity?city=${city}&country=Uzbekistan&method=2&school=1`);
+    const res = await axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city}&country=Uzbekistan&method=2&school=1`);
     dispatch({
             type: SEARCH_PRAYING_TIME,
             payload: res.data.data.timings
