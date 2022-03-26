@@ -1,7 +1,5 @@
 import {useEffect, useState } from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import Loading from "./components/Loading/Loading";
 import Navbar from "./components/Navbar/Navbar";
