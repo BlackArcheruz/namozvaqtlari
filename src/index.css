@@ -6,9 +6,7 @@
   padding: 0;
 }
 body{
-  background-image: url('./components/img/background.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #121620;
   height: max-content;
 }
 .container{
@@ -75,7 +73,7 @@ input::placeholder{
   font-weight: 400;
 }
 button, input[type=submit]{
-  background-color: #CF9809;
+  background-color: #1e2433;
   color: #fff;
   border: none;
   outline: none;
@@ -84,7 +82,7 @@ button, input[type=submit]{
   font-size: 36px;
 }
 button:hover, input[type=submit]:hover{
-  background-color: #a57702;
+  background-color: rgb(59 130 256);
   cursor: pointer;
   transition: ease .3s background-color;
 }
