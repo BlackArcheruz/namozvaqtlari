@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import Hadis from '../Hadis/Hadis'
 import PrayContext from '../../../context/prayers/prayerContext';
 
 const Prayers = (props) => {
@@ -28,7 +27,6 @@ const Prayers = (props) => {
                     <p>{prayers.Isha}</p></div>
                     </div>}
                 </div>
-                <Hadis/>
         </div>
     )
 }
