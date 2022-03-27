@@ -52,7 +52,11 @@ input, textarea{
 textarea{
   height: 10%;
 }
+.back{
+  padding: 1rem 0;
+}
 .back a{
+  cursor: pointer;
   color: #fff;
 }
 .navbar{
