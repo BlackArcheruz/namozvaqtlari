@@ -52,6 +52,13 @@ input, textarea{
 textarea{
   height: 10%;
 }
+.back a{
+  color: #fff;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
 input::placeholder{
   font-size: 36px;
 }

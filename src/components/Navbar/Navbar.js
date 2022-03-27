@@ -1,11 +1,15 @@
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 
 const Navbar = () => {
+    const history = useHistory();
     return (
-        <div className="container">
+        <div className="container navbar">
         <nav>
           <Link to="/"><h2>NAMOZ VAQTLARI</h2></Link>
-        </nav>    
+        </nav> 
+        <div className="back">
+        <h2><a onClick={() => history.goBack()}>Ortga</a></h2>   
+        </div>
         </div>
     )
 }
