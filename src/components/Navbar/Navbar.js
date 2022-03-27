@@ -8,7 +8,7 @@ const Navbar = () => {
           <Link to="/"><h2>NAMOZ VAQTLARI</h2></Link>
         </nav> 
         <div className="back">
-        <h2><a onClick={() => history.goBack()}>Ortga</a></h2>   
+        <h2><a onClick={() => history.goBack()}>&lt; Ortga</a></h2>   
         </div>
         </div>
     )
