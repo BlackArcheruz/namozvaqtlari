@@ -5,10 +5,10 @@ const Navbar = () => {
         <div className="container">
         <nav>
           <Link to="/"><h2>NAMOZ VAQTLARI</h2></Link>
-        </nav>
-        <ul>
+           <ul>
         <li><a href="https://listen-quran.cf/">Listen Quran </a></li>
         </ul>
+        </nav>    
         </div>
     )
 }
