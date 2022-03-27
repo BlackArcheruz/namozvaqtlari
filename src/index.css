@@ -80,6 +80,7 @@ button, input[type=submit]{
   border-radius: 4px;
   padding: 10px 15px;
   font-size: 36px;
+  border: 2px solid rgb(59 130 256);
 }
 button:hover, input[type=submit]:hover{
   background-color: rgb(59 130 256);

@@ -6,6 +6,9 @@ const Navbar = () => {
         <nav>
           <Link to="/"><h2>NAMOZ VAQTLARI</h2></Link>
         </nav>
+        <ul>
+        <li><a href="https://listen-quran.cf/">Listen Quran </a></li>
+        </ul>
         </div>
     )
 }
