@@ -8,7 +8,7 @@ const Prayers = (props) => {
     return (
         <div className="mobi" data-aos="fade-up-right">
                 <div className="prayers">
-                    <h2>{city === '' ? 'Shahar nomini kiriting va Qidirishni bosing !' : city + 'da Namoz Vaqtlari:'}</h2>
+                    <h2>{city === '' ? 'Shahar nomini kiriting va Qidirishni bosing !' : city + 'da namoz vaqtlari:'}</h2>
                     {city === '' ? null :<div className="prayer">
                         <div className="prayer2">
                     <h4>Bomdod: </h4>
@@ -16,7 +16,7 @@ const Prayers = (props) => {
                     <h4>Peshin: </h4>
                     <h4>Asr: </h4>
                     <h4>Shom: </h4>
-                    <h4>Xufton: </h4>
+                    <h4>Hufton: </h4>
                     </div> 
                     <div className="prayer1">
                     <p>{prayers.Fajr}</p> 
